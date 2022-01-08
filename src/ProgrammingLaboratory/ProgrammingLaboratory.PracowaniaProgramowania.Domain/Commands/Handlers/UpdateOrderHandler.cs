@@ -28,6 +28,8 @@ public class UpdateOrderHandler : IRequestHandler<UpdateOrderCommand, Result>
 
         _unitOfWork.OrderRepository.Update(entityToUpdate);
         
+        _unitOfWork.SaveChangesAsync();
+        
         return Result.Ok();
     }
 }

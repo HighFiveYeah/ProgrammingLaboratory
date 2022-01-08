@@ -26,6 +26,8 @@ public class CreateOrderHandler : IRequestHandler<CreateOrderCommand, Result<Ord
             UserId = request.UserId,
             OrderDate = DateTimeOffset.Now
         });
+        
+        _unitOfWork.SaveChangesAsync();
 
         if (result.IsFailed)
             return result;

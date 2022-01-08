@@ -27,6 +27,8 @@ public class CreateUserHandler : IRequestHandler<CreateUserCommand, Result<User>
             Code = request.Code,
             Address = request.Address
         });
+        
+        _unitOfWork.SaveChangesAsync();
 
         if (result.IsFailed)
             return result;

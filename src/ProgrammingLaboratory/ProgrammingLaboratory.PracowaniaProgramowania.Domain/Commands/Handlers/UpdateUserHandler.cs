@@ -28,6 +28,8 @@ public class UpdateUserHandler : IRequestHandler<UpdateUserCommand, Result>
         entityToUpdate.Address = request.Address;
         
         _unitOfWork.UserRepository.Update(entityToUpdate);
+        
+        _unitOfWork.SaveChangesAsync();
 
         return Result.Ok();
     }

@@ -24,8 +24,11 @@ public class DeleteOrderHandler : IRequestHandler<DeleteOrderCommand, Result>
         var entityToUpdate = result.Value;
 
         entityToUpdate.Deleted = true;
+        entityToUpdate.DeletionDate = DateTimeOffset.Now;
 
         _unitOfWork.OrderRepository.Update(entityToUpdate);
+        
+        _unitOfWork.SaveChangesAsync();
         
         return Result.Ok();
     }

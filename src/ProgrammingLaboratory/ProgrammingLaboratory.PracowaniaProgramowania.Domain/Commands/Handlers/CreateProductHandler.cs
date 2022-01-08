@@ -25,6 +25,8 @@ public class CreateProductHandler : IRequestHandler<CreateProductCommand, Result
             Name = request.Name,
             Price = request.Price
         });
+        
+        _unitOfWork.SaveChangesAsync();
 
         if (result.IsFailed)
             return result;

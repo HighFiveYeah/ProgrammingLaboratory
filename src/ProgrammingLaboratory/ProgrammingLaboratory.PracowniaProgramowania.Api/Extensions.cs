@@ -1,4 +1,8 @@
-﻿using Programminglaboratory.PracowaniaProgramowania.Persistence;
+﻿using System.Reflection;
+using MediatR;
+using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Commands;
+using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Queries;
+using Programminglaboratory.PracowaniaProgramowania.Persistence;
 
 namespace ProgrammingLaboratory.PracowniaProgramowania.Api;
 
@@ -12,7 +16,23 @@ public static class Extensions
         await dbContext.Database.EnsureCreatedAsync();
     }
     
-    public static async Task RegisterCommandHandlers(this IServiceCollection serviceCollection)
+    public static IServiceCollection RegisterHandlers(this IServiceCollection serviceCollection)
     {
+        serviceCollection.AddMediatR(typeof(CreateUserCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(UpdateUserCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(DeleteUserCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(UserQuery).GetTypeInfo().Assembly);
+        
+        serviceCollection.AddMediatR(typeof(CreateProductCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(UpdateProductCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(DeleteProductCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(ProductQuery).GetTypeInfo().Assembly);
+        
+        serviceCollection.AddMediatR(typeof(CreateOrderCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(UpdateOrderCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(DeleteOrderCommand).GetTypeInfo().Assembly);
+        serviceCollection.AddMediatR(typeof(OrderQuery).GetTypeInfo().Assembly);
+        
+        return serviceCollection;
     }
 }

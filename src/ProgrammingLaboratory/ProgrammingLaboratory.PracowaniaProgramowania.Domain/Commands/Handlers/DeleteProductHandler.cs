@@ -24,8 +24,11 @@ public class DeleteProductHandler : IRequestHandler<DeleteProductCommand, Result
         var entityToUpdate = result.Value;
 
         entityToUpdate.Deleted = true;
+        entityToUpdate.DeletionDate = DateTimeOffset.Now;
 
         _unitOfWork.ProductRepository.Update(entityToUpdate);
+        
+        _unitOfWork.SaveChangesAsync();
         
         return Result.Ok();
     }
