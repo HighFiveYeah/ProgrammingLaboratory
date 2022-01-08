@@ -2,13 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PracowniaProgramowania", "PracowniaProgramowania", "{05A34A26-0958-44EB-8779-348C048BFB1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowniaProgramowania.Api", "Programminglaboratory/ProgrammingLaboratory.PracowniaProgramowania.Api\ProgrammingLaboratory.PracowniaProgramowania.Api.csproj", "{65F2A139-4322-4E43-8F6A-3FEF8767B1A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowniaProgramowania.Api", "ProgrammingLaboratory/ProgrammingLaboratory.PracowniaProgramowania.Api\ProgrammingLaboratory.PracowniaProgramowania.Api.csproj", "{65F2A139-4322-4E43-8F6A-3FEF8767B1A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowaniaProgramowania.Domain", "Programminglaboratory/ProgrammingLaboratory.PracowaniaProgramowania.Domain\ProgrammingLaboratory.PracowaniaProgramowania.Domain.csproj", "{A78A77A4-445D-4CAE-8CD0-299FB4FA6F4B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowaniaProgramowania.Domain", "ProgrammingLaboratory/ProgrammingLaboratory.PracowaniaProgramowania.Domain\ProgrammingLaboratory.PracowaniaProgramowania.Domain.csproj", "{A78A77A4-445D-4CAE-8CD0-299FB4FA6F4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programminglaboratory.PracowaniaProgramowania.Persistence", "Programminglaboratory/Programminglaboratory.PracowaniaProgramowania.Persistence\Programminglaboratory.PracowaniaProgramowania.Persistence.csproj", "{6DC3656A-0B8A-4EE9-8896-62B39B250ECA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programminglaboratory.PracowaniaProgramowania.Persistence", "ProgrammingLaboratory/Programminglaboratory.PracowaniaProgramowania.Persistence\Programminglaboratory.PracowaniaProgramowania.Persistence.csproj", "{6DC3656A-0B8A-4EE9-8896-62B39B250ECA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowniaProgramowania.Data", "Programminglaboratory/ProgrammingLaboratory.PracowniaProgramowania.Data\ProgrammingLaboratory.PracowniaProgramowania.Data.csproj", "{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowniaProgramowania.Data", "ProgrammingLaboratory/ProgrammingLaboratory.PracowniaProgramowania.Data\ProgrammingLaboratory.PracowniaProgramowania.Data.csproj", "{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
