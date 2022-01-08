@@ -1,3 +1,5 @@
+using System.Reflection;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Programminglaboratory.PracowaniaProgramowania.Persistence;
 using ProgrammingLaboratory.PracowniaProgramowania.Api;
@@ -5,7 +7,7 @@ using ProgrammingLaboratory.PracowniaProgramowania.Api;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
+builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -16,12 +18,12 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddDbContext<DbContext>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer(@"Server=db;Database=PracowaniaProgramowaina;User=sa;Password=6wzdwqk9;");
+    options.UseSqlServer("Server=db; Database=PracowaniaProgramowania; User=sa; Password=Mb7!W7V*MXtE[4Z9;");
 });
 
 var app = builder.Build();
 
-app.Services.InitiateDatabase();
+await app.Services.InitiateDatabase();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -30,7 +32,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+// app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

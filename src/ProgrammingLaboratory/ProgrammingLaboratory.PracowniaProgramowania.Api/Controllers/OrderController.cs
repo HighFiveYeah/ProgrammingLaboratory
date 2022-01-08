@@ -7,6 +7,7 @@ using ProgrammingLaboratory.PracowniaProgramowania.Data.DataTransferObjects;
 
 namespace ProgrammingLaboratory.PracowniaProgramowania.Api.Controllers;
 
+[Route("[controller]")]
 public class OrderController : ControllerBase
 {
     private readonly IMediator _mediator;

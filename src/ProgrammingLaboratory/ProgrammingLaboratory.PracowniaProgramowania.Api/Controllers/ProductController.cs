@@ -1,12 +1,12 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using ProgrammingLaboratory.PracowaniaProgramowania.Domain;
 using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Commands;
 using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Queries;
 using ProgrammingLaboratory.PracowniaProgramowania.Data.DataTransferObjects;
 
 namespace ProgrammingLaboratory.PracowniaProgramowania.Api.Controllers;
 
+[Route("[controller]")]
 public class ProductController : ControllerBase
 {
     private readonly IMediator _mediator;
