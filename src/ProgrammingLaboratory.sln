@@ -6,9 +6,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.Praco
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowaniaProgramowania.Domain", "ProgrammingLaboratory/ProgrammingLaboratory.PracowaniaProgramowania.Domain\ProgrammingLaboratory.PracowaniaProgramowania.Domain.csproj", "{A78A77A4-445D-4CAE-8CD0-299FB4FA6F4B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programminglaboratory.PracowaniaProgramowania.Persistence", "ProgrammingLaboratory/Programminglaboratory.PracowaniaProgramowania.Persistence\Programminglaboratory.PracowaniaProgramowania.Persistence.csproj", "{6DC3656A-0B8A-4EE9-8896-62B39B250ECA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowaniaProgramowania.Persistence", "ProgrammingLaboratory/ProgrammingLaboratory.PracowaniaProgramowania.Persistence\ProgrammingLaboratory.PracowaniaProgramowania.Persistence.csproj", "{6DC3656A-0B8A-4EE9-8896-62B39B250ECA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowniaProgramowania.Data", "ProgrammingLaboratory/ProgrammingLaboratory.PracowniaProgramowania.Data\ProgrammingLaboratory.PracowniaProgramowania.Data.csproj", "{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProgrammingLaboratory.PracowniaProgramowania.Tests", "ProgrammingLaboratory.PracowniaProgramowania.Tests\ProgrammingLaboratory.PracowniaProgramowania.Tests.csproj", "{92C49F4E-2932-4C83-8C0F-4EFFA7D9D898}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,7 @@ Global
 		{A78A77A4-445D-4CAE-8CD0-299FB4FA6F4B} = {05A34A26-0958-44EB-8779-348C048BFB1E}
 		{6DC3656A-0B8A-4EE9-8896-62B39B250ECA} = {05A34A26-0958-44EB-8779-348C048BFB1E}
 		{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA} = {05A34A26-0958-44EB-8779-348C048BFB1E}
+		{92C49F4E-2932-4C83-8C0F-4EFFA7D9D898} = {05A34A26-0958-44EB-8779-348C048BFB1E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{65F2A139-4322-4E43-8F6A-3FEF8767B1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +41,9 @@ Global
 		{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2EC8F05-487F-46D8-8E4A-4AEC9E2FF5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92C49F4E-2932-4C83-8C0F-4EFFA7D9D898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92C49F4E-2932-4C83-8C0F-4EFFA7D9D898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92C49F4E-2932-4C83-8C0F-4EFFA7D9D898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92C49F4E-2932-4C83-8C0F-4EFFA7D9D898}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
