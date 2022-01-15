@@ -2,7 +2,7 @@
 using MediatR;
 using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Commands;
 using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Queries;
-using Programminglaboratory.PracowaniaProgramowania.Persistence;
+using ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 
 namespace ProgrammingLaboratory.PracowniaProgramowania.Api;
 

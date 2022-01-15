@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 using MediatR;
-using Programminglaboratory.PracowaniaProgramowania.Persistence;
+using ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 using ProgrammingLaboratory.PracowniaProgramowania.Data.Entities;
 
 namespace ProgrammingLaboratory.PracowaniaProgramowania.Domain.Queries.Handlers;

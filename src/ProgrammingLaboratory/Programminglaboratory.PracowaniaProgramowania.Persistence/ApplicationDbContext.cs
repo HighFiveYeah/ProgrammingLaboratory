@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProgrammingLaboratory.PracowniaProgramowania.Data.Entities;
 
-namespace Programminglaboratory.PracowaniaProgramowania.Persistence;
+namespace ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 
 public class ApplicationDbContext : DbContext
 {

@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 using MediatR;
-using Programminglaboratory.PracowaniaProgramowania.Persistence;
+using ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 
 namespace ProgrammingLaboratory.PracowaniaProgramowania.Domain.Commands.Handlers;
 

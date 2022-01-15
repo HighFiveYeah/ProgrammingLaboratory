@@ -1,7 +1,7 @@
 ﻿using FluentResults;
 using Microsoft.EntityFrameworkCore;
 
-namespace Programminglaboratory.PracowaniaProgramowania.Persistence;
+namespace ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 
 public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
 {

@@ -1,6 +1,6 @@
 ﻿using FluentResults;
 
-namespace Programminglaboratory.PracowaniaProgramowania.Persistence; 
+namespace ProgrammingLaboratory.PracowaniaProgramowania.Persistence; 
 public interface IRepository<TEntity> where TEntity : class
 {
     public Task<Result<TEntity>> Insert(TEntity entity);

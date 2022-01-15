@@ -1,6 +1,6 @@
 ﻿using ProgrammingLaboratory.PracowniaProgramowania.Data.Entities;
 
-namespace Programminglaboratory.PracowaniaProgramowania.Persistence;
+namespace ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 
 public interface IUnitOfWork
 {

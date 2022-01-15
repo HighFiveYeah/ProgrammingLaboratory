@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using Microsoft.EntityFrameworkCore;
-using Programminglaboratory.PracowaniaProgramowania.Persistence;
+using ProgrammingLaboratory.PracowaniaProgramowania.Persistence;
 using Module = Autofac.Module;
 
 namespace ProgrammingLaboratory.PracowaniaProgramowania.Domain;
@@ -9,7 +9,7 @@ public class ApplicationModule : Module
 {
     protected override void Load(ContainerBuilder builder)
     {
-        builder.RegisterType<IUnitOfWork>().AsImplementedInterfaces().InstancePerLifetimeScope();
+        builder.RegisterType<UnitOfWork>().AsImplementedInterfaces().InstancePerLifetimeScope();
         builder.Register(c =>
         {
             var opt = new DbContextOptionsBuilder<ApplicationDbContext>();
