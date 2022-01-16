@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Commands;
 using ProgrammingLaboratory.PracowaniaProgramowania.Domain.Queries;
 using Programminglaboratory.PracowaniaProgramowania.Persistence;
@@ -13,7 +14,7 @@ public static class Extensions
         using var scope =  serviceProvider.CreateScope();
         await using var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
         
-        await dbContext.Database.EnsureCreatedAsync();
+        await dbContext.Database.MigrateAsync();
     }
     
     public static IServiceCollection RegisterHandlers(this IServiceCollection serviceCollection)

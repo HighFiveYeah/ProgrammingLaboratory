@@ -19,7 +19,7 @@ builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddDbContext<DbContext>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseSqlServer("Server=db; Database=PracowaniaProgramowania; User=sa; Password=Mb7!W7V*MXtE[4Z9;");
+    options.UseSqlServer("Server=db; Database=master; User=sa; Password=Mb7!W7V*MXtE[4Z9;");
 });
 
 var app = builder.Build();
